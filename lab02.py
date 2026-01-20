@@ -40,10 +40,10 @@ weight_bananas = float(input())
 
 # Calculate the total without and with taxes and the output both
 total_no_tax = (num_chips * price_chips) + (num_sandwich * price_sandwich) + (weight_bananas * price_bananas)
-print(f"\nYour total before tax is {total_no_tax:.2f}.")
+print(f"\nYour total before tax is ${total_no_tax:.2f}.")
 
 print("\nPlease enter the tax rate: ", end="")
 tax_rate = float(input())
 
 total_with_tax = ((tax_rate / 100) * total_no_tax) + total_no_tax
-print(f"\nYour total after tax is {total_with_tax:.2f}. Thank you for shopping at the Clemson Market!")
+print(f"\nYour total after tax is ${total_with_tax:.2f}. Thank you for shopping at the Clemson Market!")
